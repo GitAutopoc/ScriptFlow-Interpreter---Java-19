@@ -1,0 +1,28 @@
+Problem Statement: ScriptFlow Interpreter Challenge
+Background:
+In modern software development, custom scripting solutions are often used to extend the functionality of applications dynamically. Such scripting capabilities allow users to automate tasks, manipulate data, and integrate systems without altering the underlying program code.
+
+Objective:
+Your task is to develop a "ScriptFlow Interpreter" - a lightweight scripting engine capable of parsing and executing a series of custom script commands. This interpreter should handle basic data manipulation operations on integers, strings, and arrays, reflecting real-world scenarios where dynamic scripting is necessary.
+
+Script Specifications:
+
+The script can contain any of the following commands:
+
+Add: Adds two integers.
+Syntax: add <int> <int>
+Example: add 5 3 should output 8
+Concatenate: Concatenates two strings with a space between them.
+Syntax: concat <string> <string>
+Example: concat Hello World should output Hello World
+Merge: Merges two arrays of integers.
+Syntax: merge <array> <array>
+Example: merge [1,2,3] [4,5,6] should output [1, 2, 3, 4, 5, 6]
+Split: Splits a string into an array based on a given delimiter.
+Syntax: split <string> <delimiter>
+Example: split Hello,World , should output ["Hello", "World"]
+Functional Requirements:
+
+The interpreter must be able to process multiple commands provided in a multiline string format.
+Each command must be parsed and executed to produce a result based on the specified operations.
+Outputs for each command must be printed sequentially as they are processed.
